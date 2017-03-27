@@ -1,47 +1,56 @@
-# 熟悉Linux操作系统，并能基于Linux平台完成日常开发工作
-# 熟练部署和使用Nginx/Mysql/Redis等应用
-# 精通python语言，熟悉shell脚本
-# 熟悉Backbonejs，bootstrap
-# 掌握python web框架，tornado、flask、django
-# 有云平台开发经验
-# 熟悉Openstack或参与过开发
-# 熟悉搜索、推荐系统设计或者推荐策略
-# 对数据结构、算法设计和设计模式有较为深刻的理解
-# 熟悉redis、memcached、mongodb、elasticsearch
-# 熟练使用git、jira、confluence
-# 熟悉TCP/IP等常用协议
-# 熟悉以下关键词：Devops、Docker、Openstack、Puppet、CFengine、Saltstack、Ansible、etcd、confd
-# 熟悉高级消息管理协议、RabbitMQ、Kafka
-# 熟悉python异步编程，gevent、tornado
-# 熟悉Nosql数据库
-# 服务开发经验，熟悉Thrift、Protocol Buffers
-# 熟悉云计算iaas，paas，saas
-#了解kvm、vmware、xen虚拟化技术、熟悉Qemu、Libvirt、openstack
-# 熟悉Ceph、GlusterFS的架构与实现
-# 熟悉常用的开源负载均衡软件，HAProxy、Nginx、LVS
-# 了解OpenStack组件
+ 熟悉Linux操作系统，并能基于Linux平台完成日常开发工作
+ 熟练部署和使用Nginx/Mysql/Redis等应用
+ 精通python语言，熟悉shell脚本
+ 熟悉Backbonejs，bootstrap
+ 掌握python web框架，tornado、flask、django
+ 有云平台开发经验
+ 熟悉Openstack或参与过开发
+ 熟悉搜索、推荐系统设计或者推荐策略
+ 对数据结构、算法设计和设计模式有较为深刻的理解
+ 熟悉redis、memcached、mongodb、elasticsearch
+ 熟练使用git、jira、confluence
+ 熟悉TCP/IP等常用协议
+ 熟悉以下关键词：Devops、Docker、Openstack、Puppet、CFengine、Saltstack、Ansible、etcd、confd
+ 熟悉高级消息管理协议、RabbitMQ、Kafka
+ 熟悉python异步编程，gevent、tornado
+ 熟悉Nosql数据库
+ 服务开发经验，熟悉Thrift、Protocol Buffers
+ 熟悉云计算iaas，paas，saas
+了解kvm、vmware、xen虚拟化技术、熟悉Qemu、Libvirt、openstack
+ 熟悉Ceph、GlusterFS的架构与实现
+ 熟悉常用的开源负载均衡软件，HAProxy、Nginx、LVS
+ 了解OpenStack组件
 
 
 python面试题--------------------
 1.python多线程:
 http://www.cnblogs.com/fnng/p/3670789.html
+
 2.队列和栈：
 http://www.jb51.net/article/59897.htm
+
 3.什么是python装饰器 decorator，如何使用？
 http://www.cnblogs.com/rhcad/archive/2011/12/21/2295507.html
+
 4.你会如何​​设置很多项目，其中每一个使用Python的不同版本和第三方库？
 用virtualenv
+
 5.什么是PEP8和你是如何遵循它的规范？
 pep8是python的编码规范，是大家约定的一种规范，用pylint或者在git上加钩子来检测python代码是否遵循pep8
+
 6.参数是如何传递的 - 传值还是传引用？ （容易，但又不那么容易，不确定是否能清楚地回答这个问题） 
 string，tuple，number是值传递，class，dict，list是引用传递
+
 7.什么是列表解析、字典解析？举个例子
 a=[x for x in range(101)if x%2==0]
 列表解析底层使用c实现的，效率比写for循环高很多
+
 8.你知道列表和元组之间的区别么？举个例子？
 列表是一种数据结构，可以删除，增加等操作，元组是一个不可改变的结构，常用语定义常量，数据相对安全
+
 9.range和xrange之间的区别
 range返回一个list，xrange是迭代器，节省内存，用到时才返回。
+
 10.python2.x和python3.x的区别
 2x中print 不加括号，  3x中print必须加括号. xlwt包支持的编码不同
 Py3.1性能比Py2.5慢15%，还有很大的提升空间
@@ -240,19 +249,26 @@ def __enter__(self):
             except:
                 self.rollback()
                 raise
+                
 12.如何避免对模块或方法的重复import？
 用 import xxx as xxx1和import xxx as xxx2来区分
+
 13.解读GIL
 http://www.tuicool.com/articles/7zIra2r
+
 14.什么是“特殊方法"（如<foo>）？它们如何工作的？
 sdfsdf
+
 15. yield是什么，怎么用？
 http://www.cnblogs.com/tqsummer/archive/2010/12/27/1917927.html
+
 16.redis的几种数据结构，怎么用？
 string hash list set zset
+
 17.lambda函数,map()函数,filter()函数,reduce()函数
 http://www.jb51.net/article/54506.htm
 函数式编程：http://www.cnblogs.com/huxi/archive/2011/06/18/2084316.html
+
 18.Python中，如何读取大小为8GB的文件？(即python如何读取大文件) 
 f = open('filename', 'rb')
 f.read()一次性读取全部内容，加到内存
@@ -265,12 +281,15 @@ for i in f:  迭代器，返回当前一行，适用于比较大的文件读取
 2
 for line inopen("test.txt"):   #use file iterators
 print line
+
 19.不能借助内置方法如string.atoi或者int()，能否将ASCII字符转换为整数？
 >>> print ord('A')
 65
 >>> print chr(65)
 A
+
 20.列表与元组的区别是什么.分别在什么情况下使用？
+
 21.谈谈你用过的Python库？
 pdb，requests，re，urllib，logging，threading,multiprocessing ,os/sys ,pickle,cvs,xlrd,xlwt,pymongo ,redis,collection
 可以执行命令：
