@@ -1,24 +1,45 @@
  熟悉Linux操作系统，并能基于Linux平台完成日常开发工作
+ 
  熟练部署和使用Nginx/Mysql/Redis等应用
+ 
  精通python语言，熟悉shell脚本
+ 
  熟悉Backbonejs，bootstrap
+ 
  掌握python web框架，tornado、flask、django
+ 
  有云平台开发经验
+ 
  熟悉Openstack或参与过开发
+ 
  熟悉搜索、推荐系统设计或者推荐策略
+ 
  对数据结构、算法设计和设计模式有较为深刻的理解
+ 
  熟悉redis、memcached、mongodb、elasticsearch
+ 
  熟练使用git、jira、confluence
+ 
  熟悉TCP/IP等常用协议
+ 
  熟悉以下关键词：Devops、Docker、Openstack、Puppet、CFengine、Saltstack、Ansible、etcd、confd
+ 
  熟悉高级消息管理协议、RabbitMQ、Kafka
+ 
  熟悉python异步编程，gevent、tornado
+ 
  熟悉Nosql数据库
+ 
  服务开发经验，熟悉Thrift、Protocol Buffers
+ 
  熟悉云计算iaas，paas，saas
+ 
 了解kvm、vmware、xen虚拟化技术、熟悉Qemu、Libvirt、openstack
+
  熟悉Ceph、GlusterFS的架构与实现
+ 
  熟悉常用的开源负载均衡软件，HAProxy、Nginx、LVS
+ 
  了解OpenStack组件
 
 
